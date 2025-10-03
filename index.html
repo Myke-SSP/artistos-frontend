@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>ArtistOS POC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main>
+    <h1>ArtistOS — POC Loop</h1>
+
+    <section class="card">
+      <h2>Backend URL</h2>
+      <input id="apiBase" placeholder="https://artistos-backend-1.onrender.com" />
+      <button id="saveBase">Use this API</button>
+      <p id="healthMsg">Health: not checked</p>
+    </section>
+
+    <section class="card">
+      <h2>Create Profile</h2>
+      <input id="name" placeholder="Name" />
+      <input id="alias" placeholder="Alias" />
+      <input id="city" placeholder="City" />
+      <button id="createProfile">Create & Save</button>
+      <p id="profileMsg"></p>
+    </section>
+
+    <section class="card">
+      <h2>Enter Goal</h2>
+      <input id="goal" placeholder="e.g. Release a single in 30 days" />
+      <button id="saveGoal">Save Goal</button>
+      <button id="genRoadmap">Generate Roadmap</button>
+      <p id="goalMsg"></p>
+    </section>
+
+    <section class="card">
+      <h2>Backlog</h2>
+      <ul id="backlog"></ul>
+    </section>
+  </main>
+  <script src="./app.js" type="module"></script>
+</body>
+</html>
+
